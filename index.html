@@ -2,196 +2,78 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ramo de Tulipanes - Te amo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Gerbera Roja — Te amo mucho mi chikinuni</title>
+<p> (es una gervera xd) </p>
   <style>
-    :root{
-      --bg:#f9eef2;
-      --card:#fff;
-      --shadow: rgba(20,20,30,0.12);
+    body {
+      background: #fdfdfd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
-    html,body{height:100%;}
-    body{
-      margin:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background: linear-gradient(180deg,#f7f3f6 0%, #efe9ee 100%);
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    figure {
+      text-align: center;
     }
-    .stage{
-      width:900px;
-      max-width:95vw;
-      background: linear-gradient(180deg,#ffffff 0%, #fffafc 100%);
-      border-radius:18px;
-      padding:28px;
-      box-shadow: 0 10px 30px var(--shadow);
-      display:flex;
-      gap:20px;
-      align-items:center;
-      justify-content:center;
-      position:relative;\      overflow:hidden;
+    figcaption {
+      margin-top: 12px;
+      font-size: 1.4rem;
+      color: #d32b2b;
+      font-weight: bold;
     }
-    .svg-wrap{width:720px;height:520px}
-    .message{
-      position:absolute;
-      bottom:30px;
-      left:50%;
-      transform:translateX(-50%);
-      font-family: 'Great Vibes', cursive;
-      font-size:64px;
-      color:#c70b0b; /* rojo */
-      text-shadow: 0 2px 6px rgba(0,0,0,0.18), 0 0 10px rgba(199,11,11,0.12);
-      letter-spacing:1px;
-      pointer-events:none;
-    }
-    /* small responsive tweaks */
-    @media (max-width:720px){
-      .message{font-size:40px}
-      .svg-wrap{width:90%;height:380px}
-      .stage{padding:16px}
+    .gerbera {
+      width: 280px;
+      max-width: 90%;
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="stage">
-    <div class="svg-wrap">
-      <!-- SVG realistic tulips bouquet -->
-      <svg viewBox="0 0 900 650" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-        <defs>
-          <!-- gradients for petals -->
-          <radialGradient id="g-red" cx="35%" cy="25%" r="75%">
-            <stop offset="0%" stop-color="#ffd0d0"/>
-            <stop offset="40%" stop-color="#ff6b6b"/>
-            <stop offset="100%" stop-color="#b80000"/>
-          </radialGradient>
-          <radialGradient id="g-pink" cx="40%" cy="20%" r="75%">
-            <stop offset="0%" stop-color="#ffe0f0"/>
-            <stop offset="45%" stop-color="#ff7fbf"/>
-            <stop offset="100%" stop-color="#b3005f"/>
-          </radialGradient>
-          <radialGradient id="g-yellow" cx="35%" cy="25%" r="75%">
-            <stop offset="0%" stop-color="#fff7d6"/>
-            <stop offset="45%" stop-color="#ffd24a"/>
-            <stop offset="100%" stop-color="#b37a00"/>
-          </radialGradient>
-          <radialGradient id="g-white" cx="35%" cy="25%" r="75%">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="50%" stop-color="#f2f2f6"/>
-            <stop offset="100%" stop-color="#d6d6db"/>
-          </radialGradient>
+  <figure>
+    <!-- SVG Gerbera -->
+    <svg class="gerbera" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg">
+      <!-- Tallo -->
+      <rect x="240" y="250" width="20" height="400" fill="#2e7d32" rx="8"/>
 
-          <!-- stem gradient -->
-          <linearGradient id="g-stem" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#76b86b"/>
-            <stop offset="100%" stop-color="#2e7a2e"/>
-          </linearGradient>
+      <!-- Centro de la flor -->
+      <circle cx="250" cy="250" r="40" fill="#5d4037"/>
 
-          <!-- leaf gradient -->
-          <linearGradient id="g-leaf" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0%" stop-color="#9ad18a"/>
-            <stop offset="100%" stop-color="#2e7a2e"/>
-          </linearGradient>
-
-          <!-- subtle shadow filter -->
-          <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.18"/>
-          </filter>
-        </defs>
-
-        <!-- background vignette -->
-        <rect x="0" y="0" width="900" height="650" rx="12" fill="url(#bg)" opacity="0" />
-
-        <!-- Leaves behind -->
-        <g transform="translate(120,220) rotate(-12)">
-          <path d="M140 220 C60 200 40 90 240 40 C120 120 220 200 140 220 Z" fill="url(#g-leaf)" opacity="0.95" transform="scale(1.1)"/>
+      <!-- Pétalos -->
+      <g fill="#d32b2b">
+        <!-- 24 pétalos distribuidos en círculo -->
+        <g transform="translate(250,250)">
+          <!-- Generamos pétalos con rotación -->
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(0)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(15)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(30)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(45)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(60)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(75)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(90)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(105)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(120)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(135)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(150)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(165)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(180)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(195)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(210)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(225)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(240)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(255)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(270)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(285)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(300)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(315)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(330)" />
+          <path d="M0,-120 C20,-100 20,-40 0,-20 C-20,-40 -20,-100 0,-120 Z" transform="rotate(345)" />
         </g>
-        <g transform="translate(300,240) rotate(18)">
-          <path d="M120 230 C40 200 60 90 260 40 C140 120 240 200 120 230 Z" fill="url(#g-leaf)" opacity="0.95" transform="scale(1.05)"/>
-        </g>
+      </g>
+    </svg>
 
-        <!-- stems group -->
-        <g id="stems" stroke="none" fill="url(#g-stem)" filter="url(#softShadow)">
-          <!-- multiple stems slightly curved -->
-          <path d="M420 480 C420 380 380 300 380 220" stroke="none" fill="#6fb36a" stroke-linecap="round" stroke-width="8"/>
-          <path d="M360 500 C360 380 320 300 320 220" stroke="none" fill="#63b25f" stroke-linecap="round" stroke-width="8"/>
-          <path d="M480 500 C480 380 520 300 520 220" stroke="none" fill="#5aa851" stroke-linecap="round" stroke-width="8"/>
-          <path d="M500 480 C500 380 540 320 560 240" stroke="none" fill="#4fa748" stroke-linecap="round" stroke-width="8"/>
-          <path d="M300 520 C300 420 260 340 260 260" stroke="none" fill="#5fbf65" stroke-linecap="round" stroke-width="8"/>
-        </g>
-
-        <!-- leaves front -->
-        <g id="leaves-front" fill="url(#g-leaf)" opacity="0.98">
-          <path d="M290 430 C200 400 220 300 380 260 C260 320 340 460 290 430 Z" />
-          <path d="M460 460 C420 420 410 340 520 280 C440 340 500 520 460 460 Z" />
-        </g>
-
-        <!-- Tulip groups: create a function-like repetition with different transforms -->
-        <!-- Tulip component (petals + inner) replicated with different fills -->
-
-        <!-- Tulip 1 (red, left) -->
-        <g transform="translate(310,140) scale(1.05) rotate(-8)">
-          <g transform="translate(-40,0)">
-            <g>
-              <!-- petals -->
-              <path d="M60 20 C30 -10 -20 20 10 80 C40 140 110 120 130 80 C160 20 120 -10 90 20 C75 35 70 20 60 20 Z" fill="url(#g-red)" stroke="#9b0a0a" stroke-opacity="0.12" stroke-width="1"/>
-              <path d="M90 10 C110 -8 150 18 130 70 C120 108 90 120 60 80 C40 50 65 15 90 10 Z" fill="url(#g-red)" opacity="0.95"/>
-              <!-- inner detail -->
-              <ellipse cx="85" cy="75" rx="8" ry="12" fill="#3b0b0b" opacity="0.6"/>
-            </g>
-          </g>
-        </g>
-
-        <!-- Tulip 2 (pink, center-left) -->
-        <g transform="translate(370,110) scale(1.08) rotate(-4)">
-          <path d="M80 10 C50 -10 10 20 40 90 C65 140 120 120 140 80 C170 20 140 -10 110 20 C95 35 90 20 80 10 Z" fill="url(#g-pink)" stroke="#8a0b5a" stroke-opacity="0.12" stroke-width="1"/>
-          <ellipse cx="110" cy="80" rx="6" ry="10" fill="#3b0b35" opacity="0.55"/>
-        </g>
-
-        <!-- Tulip 3 (yellow, center) -->
-        <g transform="translate(440,90) scale(1.12) rotate(2)">
-          <path d="M90 6 C60 -12 20 18 50 88 C72 132 130 115 150 78 C180 18 140 -12 110 18 C95 33 92 18 90 6 Z" fill="url(#g-yellow)" stroke="#9a6b00" stroke-opacity="0.12" stroke-width="1"/>
-          <ellipse cx="115" cy="82" rx="5" ry="9" fill="#4a3300" opacity="0.5"/>
-        </g>
-
-        <!-- Tulip 4 (white-cream, right) -->
-        <g transform="translate(520,120) scale(1.05) rotate(10)">
-          <path d="M80 12 C50 -8 10 20 40 92 C70 138 130 115 150 78 C172 25 132 -5 100 18 C85 34 82 20 80 12 Z" fill="url(#g-white)" stroke="#cfcfd3" stroke-opacity="0.2" stroke-width="1"/>
-          <ellipse cx="110" cy="82" rx="6" ry="10" fill="#3b3636" opacity="0.45"/>
-        </g>
-
-        <!-- Tulip 5 (deep pink, front) -->
-        <g transform="translate(460,150) scale(1.07) rotate(-6)">
-          <path d="M90 8 C60 -10 20 18 50 86 C80 132 138 118 158 80 C180 18 140 -12 110 18 C96 34 92 18 90 8 Z" fill="url(#g-pink)" stroke="#7a0b4f" stroke-opacity="0.14" stroke-width="1"/>
-          <ellipse cx="115" cy="86" rx="6" ry="11" fill="#2c0b2b" opacity="0.6"/>
-        </g>
-
-        <!-- Add subtle highlight petals overlapping -->
-        <g transform="translate(400,130)">
-          <path d="M62 22 C40 2 0 28 30 84 C52 120 110 100 120 82 C150 30 110 4 82 24 C72 34 68 22 62 22 Z" fill="rgba(255,255,255,0.14)"/>
-        </g>
-
-        <!-- ribbon -->
-        <g transform="translate(320,420)">
-          <path d="M120 40 C110 80 60 96 40 42 C20 -12 120 0 120 40 Z" fill="#b2224a" stroke="#7b1030" stroke-width="2"/>
-          <path d="M70 46 C58 60 38 68 20 56 C6 46 28 40 48 44 C60 46 66 46 70 46 Z" fill="#ff4d79" opacity="0.95"/>
-          <path d="M140 46 C150 64 178 70 190 50 C200 34 170 40 150 44 C140 46 140 46 140 46 Z" fill="#a3163a" opacity="0.95"/>
-        </g>
-
-        <!-- small bouquet wrap (paper) -->
-        <g transform="translate(240,360)">
-          <path d="M0 60 C40 30 220 30 300 60 L320 340 L0 340 Z" fill="#faf0ef" stroke="#e9d5d8" stroke-width="2" opacity="0.95"/>
-          <path d="M10 80 C60 60 230 60 290 80 L300 330 L20 330 Z" fill="#ffeef2" opacity="0.6"/>
-        </g>
-
-        <!-- soft ground shadow -->
-        <ellipse cx="420" cy="540" rx="220" ry="28" fill="rgba(0,0,0,0.12)"/>
-
-      </svg>
-    </div>
-
-    <div class="message">Te amo</div>
-  </div>
+    <figcaption>Te amo mucho mi chikinuni</figcaption>
+  </figure>
 </body>
 </html>
